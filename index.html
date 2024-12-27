@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number System Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Number System Converter</h2>
+
+<div class="container">
+    <!-- Binary Calculator Section -->
+    <div class="conversion-box">
+        <h3>Binary Calculator</h3>
+        <input type="text" id="binCalcInput1" placeholder="Enter binary number 1">
+        <input type="text" id="binCalcInput2" placeholder="Enter binary number 2">
+        <select id="calcOperation">
+            <option value="add">Add</option>
+            <option value="sub">Subtract</option>
+            <option value="mul">Multiply</option>
+            <option value="div">Divide</option>
+        </select>
+        <button onclick="binaryCalculator()">Calculate</button>
+        <p id="binCalcResult" class="binCalcResult"></p>
+    </div>
+
+    <!-- Conversions: Binary, Decimal, Hexadecimal, Octal -->
+    <div class="conversion-box">
+        <h3>Binary to Other Systems</h3>
+        <input type="text" id="binToDecInput" placeholder="Binary to Decimal">
+        <button onclick="binToDec()">Convert</button>
+        <p id="binToDecResult" class="result"></p>
+
+        <input type="text" id="binToHexInput" placeholder="Binary to Hexadecimal">
+        <button onclick="binToHex()">Convert</button>
+        <p id="binToHexResult" class="result"></p>
+
+        <input type="text" id="binToOctInput" placeholder="Binary to Octal">
+        <button onclick="binToOct()">Convert</button>
+        <p id="binToOctResult" class="result"></p>
+    </div>
+
+    <div class="conversion-box">
+        <h3>Decimal to Other Systems</h3>
+        <input type="text" id="decToBinInput" placeholder="Decimal to Binary">
+        <button onclick="decToBin()">Convert</button>
+        <p id="decToBinResult" class="result"></p>
+
+        <input type="text" id="decToHexInput" placeholder="Decimal to Hexadecimal">
+        <button onclick="decToHex()">Convert</button>
+        <p id="decToHexResult" class="result"></p>
+
+        <input type="text" id="decToOctInput" placeholder="Decimal to Octal">
+        <button onclick="decToOct()">Convert</button>
+        <p id="decToOctResult" class="result"></p>
+    </div>
+
+    <div class="conversion-box">
+        <h3>Hexadecimal to Other Systems</h3>
+        <input type="text" id="hexToBinInput" placeholder="Hexadecimal to Binary">
+        <button onclick="hexToBin()">Convert</button>
+        <p id="hexToBinResult" class="result"></p>
+
+        <input type="text" id="hexToDecInput" placeholder="Hexadecimal to Decimal">
+        <button onclick="hexToDec()">Convert</button>
+        <p id="hexToDecResult" class="result"></p>
+
+        <input type="text" id="hexToOctInput" placeholder="Hexadecimal to Octal">
+        <button onclick="hexToOct()">Convert</button>
+        <p id="hexToOctResult" class="result"></p>
+    </div>
+
+    <div class="conversion-box">
+        <h3>Octal to Other Systems</h3>
+        <input type="text" id="octToBinInput" placeholder="Octal to Binary">
+        <button onclick="octToBin()">Convert</button>
+        <p id="octToBinResult" class="result"></p>
+
+        <input type="text" id="octToDecInput" placeholder="Octal to Decimal">
+        <button onclick="octToDec()">Convert</button>
+        <p id="octToDecResult" class="result"></p>
+
+        <input type="text" id="octToHexInput" placeholder="Octal to Hexadecimal">
+        <button onclick="octToHex()">Convert</button>
+        <p id="octToHexResult" class="result"></p>
+    </div>
+</div>
+
+<p id="error" class="error"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
